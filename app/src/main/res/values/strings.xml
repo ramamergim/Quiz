@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Quiz</string>
+
+    <string name="true_button">True</string>
+    <string name="false_button">False</string>
+
+    <string name="correct">Correct</string>
+    <string name="incorrect">Incorrect</string>
+
+    <string name="next_button">Next</string>
+    <string name="previous_button">Previous</string>
+
+    <string name="question_1">1. In an instance method or a constructor, "this" is a reference to the current object.</string>
+    <string name="question_2">2. Garbage Collection is manual process.</string>
+    <string name="question_3">3. The JRE deletes objects when it determines that they are no longer being used. This process is called Garbage Collection.</string>
+    <string name="question_4">4. Constructor overloading is not possible in Java.</string>
+    <string name="question_5">5. Assignment operator is evaluated Left to Right.</string>
+    <string name="question_6">6. All binary operators except for the assignment operators are evaluated from Left to Right</string>
+    <string name="question_7">7. Java programming is not statically-typed, means all variables should not first be declared before they can be used.</string>
+    <string name="question_8">8. In Java SE 7 and later, underscore characters "_" can appear anywhere between digits in a numerical literal</string>
+    <string name="question_9">9. Variable name can begin with a letter, "$", or "_".</string>
+    <string name="question_10">10. Interfaces can be instantiated.</string>
+    <string name="question_11">11. The modifiers public and static cannot written in either order "public static" or "static public".</string>
+    <string name="question_12">12. A .class file contains bytecodes?</string>
+    <string name="question_13">13. James Gosling is father of Java?</string>
+    <string name="question_14">14. Java technology is both a programming language and a platform.</string>
+    <string name="question_15">15. Arrays can also be created and initialize as ( int x[] = new int[]{10,20,30}; )</string>
+
+</resources>
