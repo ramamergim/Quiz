@@ -10,6 +10,7 @@ public class Question implements Serializable {
     private int mQuestionResultId;
     private boolean mAnswerTrue;
     private boolean mUserAnswerTrue;
+    private int mUserAnswer = -1;
 
     public Question(int questionResultId, boolean answerTrue) {
         mQuestionResultId = questionResultId;
@@ -38,5 +39,13 @@ public class Question implements Serializable {
 
     public void setUserAnswerTrue(boolean userAnswerTrue) {
         mUserAnswerTrue = userAnswerTrue;
+    }
+
+    public int getUserAnswer() {
+        return mUserAnswer;
+    }
+
+    public void setUserAnswer(int userAnswer) {
+        mUserAnswer = userAnswer;
     }
 }

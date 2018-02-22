@@ -1,5 +1,6 @@
 package com.mergimrama.quiz;
 
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -51,11 +52,11 @@ public class ListAdapter extends BaseAdapter {
         }
 
         int question = mQuestions.get(position).getQuestionResultId();
-        boolean userAnswer = mQuestions.get(position).isUserAnswerTrue();
+        int userAnswer = mQuestions.get(position).getUserAnswer();
         boolean solution = mQuestions.get(position).isAnswerTrue();
 
         mViewHolder.questionTextView.setText(question);
-        mViewHolder.userAnswerTextView.setText(userAnswer + "");
+        mViewHolder.userAnswerTextView.setText(translateNum(userAnswer));
         mViewHolder.solutionTextView.setText(solution + "");
 
         return view;
@@ -76,5 +77,17 @@ public class ListAdapter extends BaseAdapter {
     public void setQuestions(ArrayList<Question> questions) {
         mQuestions = questions;
         notifyDataSetChanged();
+    }
+
+    private String translateNum(int number) {
+        switch (number) {
+            case 0 : {
+                return "false";
+            }
+            case 1 : {
+                return "true";
+            }
+            default: return null;
+        }
     }
 }

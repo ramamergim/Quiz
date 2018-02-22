@@ -11,8 +11,6 @@ import java.util.ArrayList;
 
 public class ResultsActivity extends AppCompatActivity {
 
-    private Question[] mQuestion;
-
     private ListView mListView;
     private ListAdapter mListAdapter;
 
@@ -26,18 +24,13 @@ public class ResultsActivity extends AppCompatActivity {
         mListView = (ListView) findViewById(R.id.list_view);
         mListAdapter = new ListAdapter(getLayoutInflater());
         mListView.setAdapter(mListAdapter);
-        mQuestion = (Question[]) getIntent().getSerializableExtra(QuizActivity.EXTRA_RESULTS_OBJ);
+        mQuestions = (ArrayList<Question>) getIntent().getSerializableExtra(QuizActivity.EXTRA_RESULTS_OBJ);
 
-        mListAdapter.setQuestions(fillArrayList());
+        mListAdapter.setQuestions(mQuestions);
     }
 
-    private ArrayList<Question> fillArrayList() {
-        ArrayList<Question> questions = new ArrayList<>();
-
-        for (int i = 0; i < mQuestion.length; i++) {
-            questions.add(mQuestion[i]);
-        }
-
-        return questions;
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
     }
 }
