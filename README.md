@@ -25,6 +25,7 @@ Click File -> New -> Project From Version Control -> GitHub. Then, enter your Gi
 If you want to install this app in your Android mobile, just click Quiz.apk below:
 
 * [Quiz.apk](https://github.com/ramamergim/Quiz/blob/master/app/src/main/res/app-release.apk) - Download for your mobile
+* [Quiz.apk (Mediafire)](http://www.mediafire.com/file/27zlicgcip1asqk/Quiz.apk) - Download from Mediafire
 
 Windows Users
 
