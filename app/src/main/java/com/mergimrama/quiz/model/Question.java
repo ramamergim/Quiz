@@ -1,12 +1,15 @@
 package com.mergimrama.quiz.model;
 
+import java.io.Serializable;
+
 /**
  * Created by Mergim on 21-Feb-18.
  */
 
-public class Question {
+public class Question implements Serializable {
     private int mQuestionResultId;
     private boolean mAnswerTrue;
+    private boolean mUserAnswerTrue;
 
     public Question(int questionResultId, boolean answerTrue) {
         mQuestionResultId = questionResultId;
@@ -27,5 +30,13 @@ public class Question {
 
     public void setAnswerTrue(boolean answerTrue) {
         mAnswerTrue = answerTrue;
+    }
+
+    public boolean isUserAnswerTrue() {
+        return mUserAnswerTrue;
+    }
+
+    public void setUserAnswerTrue(boolean userAnswerTrue) {
+        mUserAnswerTrue = userAnswerTrue;
     }
 }

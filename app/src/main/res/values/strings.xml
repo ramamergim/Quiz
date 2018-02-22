@@ -26,4 +26,6 @@
     <string name="question_14">14. Java technology is both a programming language and a platform.</string>
     <string name="question_15">15. Arrays can also be created and initialize as ( int x[] = new int[]{10,20,30}; )</string>
 
+    <string name="results">Results</string>
+
 </resources>
